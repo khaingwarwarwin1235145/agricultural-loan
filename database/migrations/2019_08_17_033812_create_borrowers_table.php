@@ -25,6 +25,7 @@ class CreateBorrowersTable extends Migration
             ');
             $table->string('township');
             $table->string('state');
+            $table->boolean('varified');
             $table->integer(' rid');
             $table->timestamps();
         });
