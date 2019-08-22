@@ -10,7 +10,7 @@
         <div class="col-lg-1">=</div>
     <div class="col-lg-2">
         <?php 
-            $moneyamount = $input['racre_no'];
+            $moneyamount = $input['acre_no'];
             $result = $moneyamount * 100000;
             echo $result;
             ?>က်ပ္
@@ -23,7 +23,7 @@
         <div class="col-lg-1">=</div>
         <div class="col-lg-2">
                 <?php 
-                $moneyamount = $input['racre_no'];
+                $moneyamount = $input['acre_no'];
                 $result = $moneyamount * 100000;
                 $result_2 = $result * 0.02;
                 echo $result_2;
@@ -37,7 +37,7 @@
         <div class="col-lg-1">=</div>
         <div class="col-lg-2">
                 <?php 
-                $moneyamount = $input['racre_no'];
+                $moneyamount = $input['acre_no'];
                 $result = $moneyamount * 100000;
                 $result_2 = $result * 0.02;
                 $result_3 = $result_2 * 8;
@@ -56,12 +56,34 @@
             ?>
         </div>
     </div><br>
-    <div class="row" style="color: forestgreen; weight: 400; padding-left: 30px;">
+    {{-- <div class="row" style="color: forestgreen; weight: 400; padding-left: 30px;">
         <div class="col-lg-3">င္ေခ်းေငြျပန္ဆပ္ရမည့္ေနာက္ဆံုးလ
         </div>
         <div class="col-lg-1">=</div>
-        <div class="col-lg-2"></div>
-    </div>
+        <div class="col-lg-2">
+           
+        </div>
+    </div><br> --}}
+    <div class="row" style="color: forestgreen; weight: 400; padding-left: 30px;">
+            <div class="col-lg-3">ေခ်းေငြထုတ္ရမည့္ကုတ္နံပါတ္
+            </div>
+            <div class="col-lg-1">=</div>
+            <div class="col-lg-2">
+                <a style="background-color: forestgreen; color:aliceblue; font-weight: 400; padding: 10px;">
+                    <?php
+                    echo mt_rand(0, 10);
+                    //     mt_srand(10);
+                    //     $count = 0;
+  
+                    //     while($count < 10) {
+                    //         echo mt_rand(0, 100)." ";
+                    //         $count++;
+                    // }
+                    ?>
+
+                </a>
+            </div>
+        </div>
 </div>
 
 @endsection

@@ -16,7 +16,7 @@ class BorrowersController extends Controller
      */
     public function index()
     {
-        $borrowers =Borrower::latest()->paginate(5);
+        $borrowers =Borrower::all();
   
         return view('borrowers.index',compact('borrowers'))
             ->with('i', (request()->input('page', 1) - 1) * 5);

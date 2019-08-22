@@ -93,13 +93,7 @@
                                         <strong>ဆက္သြယ္ရန္ဖုန္းနံပတ္</strong>
                                         <input type="text" name="rph_no" class="form-control">
                                     </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="form-group">
-                                        <strong>ပိုင္ဆိုင္သည့္လယ္ဧက</strong>
-                                        <input type="text" name="racre_no" class="form-control">
-                                    </div>
-                            </div>   
+                            </div>  
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <strong>ရပ္ကြက္/ေက်းရြာအမည္</strong>

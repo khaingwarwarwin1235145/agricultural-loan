@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+
 use DB;
-use App\Quotation;
-use App\Borrower;
-use App\Result;
+use Borrower;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
 
@@ -40,25 +40,42 @@ class InfoController extends Controller
      */
     public function store(Request $request)
     {
-          
             $input = array(
                 'name' => Input::get('name'),
                 // 'nrc_no' => Input::get('nrc_no'),
                 // 'rnrc_no' => Input::get('rnrc_no')
                 'rname' => Input::get('rname'),
-                'racre_no'=>Input::get('racre_no')
+                'acre_no'=>Input::get('acre_no')
                     );
             $rules = array(
                 'name' => 'required',
                 // 'nrc_no' => 'required',
                 // 'rnrc_no' => 'required'
                 'rname' => 'required',
-                'racre_no'=>'required',
+                'acre_no'=>'required',
             );
             $validator = Validator::make($input,$rules);
+            // $id = DB::table('borrowers')
+            // ->select('borrowers.id')
+            // ->where('borrowers.name', '=', Input::get('name'))->get();
+            // foreach($id as $key){
+            //     $update = DB::table('borrowers')
+            //     ->where('borrowers.id', $key->id)
+            //     ->update(array('borrowers.varified'=> 1));
+            //     return $update;
+            // }
             if($validator->fails()){
-                return "false";
+                return false;
             }else{
+                $id = DB::table('borrowers')
+                    ->select('borrowers.id')
+                    ->where('borrowers.name', '=', Input::get('name'))->get();
+                    foreach($id as $key){
+                        $update = DB::table('borrowers')
+                        ->where('borrowers.id', $key->id)
+                        ->update(array('borrowers.varified'=> 1));
+                        }
+                
                 return view('info.moneyamount',array('input'=>$input));
             }
     }

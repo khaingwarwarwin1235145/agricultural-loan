@@ -2,10 +2,14 @@
 @section('content')
     <div class="row" style="padding-top: 100px;">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div >
                 <h2 style="text-align: center; color: forestgreen; font-weight: 700; text-align: center;">​ေငြ​ေခ်းရန္​ စာရင္​းတင္​ထားသူမ်ား</h2><br>
             </div>
-            <div class="pull-right" style="padding-top: 50px;">
+            <div class="pull-right" style="padding-top: 50px; padding-right: 20px;">
+                <a class="btn btn-success" href="{{ route('info.create') }}">ေခ်းေငြမ်ားရယူရန္
+                    </a>
+            </div>
+            <div class="pull-right" style="padding-top: 50px; padding-right: 20px;">
                 <a class="btn btn-success" href="{{ route('borrowers.create') }}">စာရင္းတင္သူအသစ္ဖန္တီးရန္
                     </a>
             </div>
@@ -32,6 +36,7 @@
         </tr>
         @foreach ($borrowers as $borrower)
         <tr>
+            
             <td>{{ ++$i }}</td>
             <td>{{ $borrower->name }}</td>
             <td>{{ $borrower->nrc_no}}</td>
@@ -41,6 +46,7 @@
             <td>{{ $borrower->township}}</td>
             <td>{{ $borrower->state}}</td>
             <td>{{ $borrower->rname }}</td>
+
             <td>
                 <form action="{{ route('borrowers.destroy',$borrower->id) }}" method="POST">
    

@@ -15,8 +15,8 @@ class Borrower extends Model
         'acre_no',
         'village',
         'township',
-        'state',\
-        'varified'
+        'state',
+        'varified',
         'rid',
         'rname',
         'rfathername',
