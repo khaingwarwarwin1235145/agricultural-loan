@@ -3,7 +3,7 @@
       <h2 style="color:aliceblue; font-weight: 500; font-size: 35px;">Agricultural Loan</h2>
     </a>
     <div class="dropdown">
-        <button style="margin-left: 1080px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button style="margin-left: 1120px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Action
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 1080px; width: 150px;">

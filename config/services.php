@@ -34,6 +34,7 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+
     'stripe' => [
         'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
@@ -42,6 +43,11 @@ return [
             'secret' => env('STRIPE_WEBHOOK_SECRET'),
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
+    ],
+    'ses' => [
+        'key' => 'your-ses-key',
+        'secret' => 'your-ses-secret',
+        'region' => 'ses-region',  // e.g. us-east-1
     ],
 
 ];

@@ -14,42 +14,35 @@
                 <a class="btn btn-success" href="{{ route('borrowers.create') }}">စာရင္းတင္သူအသစ္ဖန္တီးရန္
                 </a>
             </div>
-    </div><br><br><br>
-   
+        </div>
+    </div><br>
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
     @endif
-    <table class="table table-bordered">
-        <tr>
+    <table class="table table-bordered" style="padding-top: 50px;">
+        <tr style="background-color: forestgreen; color:aliceblue; font-weight: 400;">
             <th>ေခ်းငွါးသူအမည္</th>
-            <th>မွတ္ပံုတင္နံပါတ္</th>
-            <th> ဆက္သြယ္ရန္ဖုန္းနံပတ္ </th>
-            <th>ၿမိဳ႕နယ္အမည္</th>
-            <th> ျပည္နယ္/တိုင္းေဒသႀကီးအမည္</th>
+            <th>ဆက္သြယ္ရန္ဖုန္းနံပတ္ </th>
+            <th>ဘဏ္မွထုတ္ေပးမည့္ေခ်းေငြ</th>
+            <th>တစ္လအတြက္ေပးရမည့္အတိုး</th>
+            <th>၈လအတြက္စုစုေပါင္း</th>
+            <th> ျခ်းေငြထုတ္ယူသည့္ရက္စြဲ </th>
             <th>ေထာက္ခံေပးသူအမည္</th>
         </tr>
         @foreach ($borrower as $borrowers)
         <tr>
-            <td>{{$borrowers->name}}</td>
-            <td>{{ $borrowers->nrc_no}}</td>
+            <td>{{$borrowers->name}}</a></td>
             <td>{{ $borrowers->ph_no}}</td>
-            <td>{{ $borrowers->township}}</td>
-            <td>{{ $borrowers->state}}</td>
+            <td>{{ $borrowers->creditamount}}</td>
+            <td>{{ $borrowers->toeamount}}</td>
+            <td>{{ $borrowers->totalamount}}</td>
+            <td>{{ $borrowers->date}}</td>
             <td>{{ $borrowers->rname }}</td>
             <td>
-                {{-- <form action="{{ route('borrowers.destroy',$borrower->id) }}" method="POST">
-   
-                    <a class="btn btn-info" href="{{ route('borrowers.show',$borrower->id) }}">Show</a>
-    
-                    <a class="btn btn-primary" href="{{ route('borrowers.edit',$borrower->id) }}">Edit</a>
-   
-                    @csrf
-                    @method('DELETE')
-      
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form> --}}
+                <a href={{ url('mail')}} type="button" class="btn btn-default" style="background-color: goldenrod; color: white; font-weight: 400; padding: 10px; border-radius: 20px; decoration: none;">Send Code
+                </a>
             </td>
         </tr>
         @endforeach

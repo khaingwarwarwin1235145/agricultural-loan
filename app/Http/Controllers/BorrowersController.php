@@ -50,6 +50,7 @@ class BorrowersController extends Controller
             'village'=>'required',
             'township'=>'required',
             'state'=>'required',
+            'email'=>'required',
             'rname'=>'required',
             'rfathername'=> 'required',
             'rnrc_no'=>'required',
@@ -69,6 +70,7 @@ class BorrowersController extends Controller
             'village'=> $request->get('village'),
             'township'=> $request->get('township'),
             'state'=> $request->get('state'),
+            'email'=> $request->get('email'),
             'rname' => $request->get('rname'),
             'rfathername'=> $request->get('rfathername'),
             'rnrc_no'=> $request->get('rnrc_no'),
@@ -121,6 +123,7 @@ class BorrowersController extends Controller
             'nrc_no'=>'required',
             'work'=>'required',
             'ph_no'=>'required',
+            'email'=>'required',
             'acre_no'=>'required',
             'village'=>'required',
             'township'=>'required',
@@ -140,6 +143,7 @@ class BorrowersController extends Controller
           $borrower->nrc_no = $request->get('nrc_no');
           $borrower->work = $request->get('work');
           $borrower->ph_no = $request->get('ph_no');
+          $borrower->email = $request->get('email');
           $borrower->acre_no = $request->get('acre_no');
           $borrower->village = $request->get('village');
           $borrower->township = $request->get('township');

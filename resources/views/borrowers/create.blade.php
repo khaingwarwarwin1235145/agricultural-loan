@@ -23,7 +23,7 @@
             </ul>
         </div>
     @endif
-    <div id="main-box" style="height: 900px;">
+    <div id="main-box" style="height: 1000px;">
         <form action="{{ route('borrowers.store') }}" method="POST" style="padding-left: 50px;">
                         @csrf
                 <div class="row" style="padding-top: 60px;">
@@ -59,6 +59,12 @@
                                                     <input type="text" name="ph_no" class="form-control">
                                                 </div>
                                         </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <strong>အီးေမးလ္လိပ္စာ</strong>
+                                                    <input type="eamil" name="email" class="form-control">
+                                                </div>
+                                        </div> 
                                         <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
                                                     <strong>ပိုင္ဆိုင္သည့္လယ္ဧက</strong>

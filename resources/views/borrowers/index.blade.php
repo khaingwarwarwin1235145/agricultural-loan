@@ -2,8 +2,8 @@
 @section('content')
     <div class="row" style="padding-top: 100px;">
         <div class="col-lg-12 margin-tb">
-            <div >
-                <h2 style="text-align: center; color: forestgreen; font-weight: 700; text-align: center;">​ေငြ​ေခ်းရန္​ စာရင္​းတင္​ထားသူမ်ား</h2><br>
+            <div>
+                <h2 style="text-align: center; color: forestgreen; font-weight: 700;">​ေငြ​ေခ်းရန္​ စာရင္​းတင္​ထားသူမ်ား</h2><br>
             </div>
             <div class="pull-right" style="padding-top: 50px; padding-right: 20px;">
                 <a class="btn btn-success" href="{{ route('info.create') }}">ေခ်းေငြမ်ားရယူရန္
@@ -23,7 +23,7 @@
     @endif
    
     <table class="table table-bordered">
-        <tr>
+        <tr style="background-color: forestgreen; color:aliceblue; font-weight: 400;">
             <th>စဥ္</th>
             <th>ေခ်းငွါးသူအမည္</th>
             <th>မွတ္ပံုတင္နံပါတ္</th>

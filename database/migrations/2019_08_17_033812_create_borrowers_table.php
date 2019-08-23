@@ -20,13 +20,18 @@ class CreateBorrowersTable extends Migration
             $table->string('nrc_no');
             $table->string('work');
             $table->string('ph_no');
+            $table->string('email');
+            $table->integer('creditamount');
+            $table->integer('toeamount');
+            $table->integer('totalamount');
+            $table->integer('code');
+            $table->string('date');
             $table->integer('acre_no');
             $table->string('village
             ');
             $table->string('township');
             $table->string('state');
             $table->boolean('varified');
-            $table->integer(' rid');
             $table->timestamps();
         });
     }

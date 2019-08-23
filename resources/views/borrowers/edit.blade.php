@@ -24,7 +24,7 @@
         </ul>
     </div>
 @endif
-<div id="main-box" style="height: 900px;">
+<div id="main-box" style="height: 1000px;">
     <form action="{{ route('borrowers.update',$borrower->id) }}" method="POST">
         @csrf
         @method('PUT')
@@ -61,6 +61,12 @@
                             <input type="text" name="ph_no" value="{{ $borrower->ph_no}}" class="form-control">
                         </div>
                     </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <strong>အီးေမးလ္လိပ္စာ                                    </strong>
+                                <input type="email" name="email" value="{{ $borrower->email}}" class="form-control">
+                            </div>
+                        </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
                             <strong>ပိုင္ဆိုင္သည့္လယ္ဧက</strong>
