@@ -53,15 +53,6 @@ class InfoController extends Controller
                 'acre_no'=>'required',
             );
             $validator = Validator::make($input,$rules);
-            // $id = DB::table('borrowers')
-            // ->select('borrowers.id')
-            // ->where('borrowers.name', '=', Input::get('name'))->get();
-            // foreach($id as $key){
-            //     $update = DB::table('borrowers')
-            //     ->where('borrowers.id', $key->id)
-            //     ->update(array('borrowers.varified'=> 1));
-            //     return $update;
-            // }
             if($validator->fails()){
                 return false;
             }else{
@@ -85,6 +76,7 @@ class InfoController extends Controller
                         'borrowers.totalamount'=> $totalamount,
                         'borrowers.code'=> $code,
                         'borrowers.date'=> $date]);
+                        
                         $borrower = DB::table('borrowers')
                         ->select(['borrowers.name','borrowers.creditamount','borrowers.toeamount',
                         'borrowers.totalamount','borrowers.code','borrowers.date'])

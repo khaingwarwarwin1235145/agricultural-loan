@@ -22,8 +22,8 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
-        <tr style="background-color: forestgreen; color:aliceblue; font-weight: 400;">
+    <table class="table table-bordered" style="font-weight: 300; font-size: 12px;">
+        <tr style="background-color: forestgreen; color:aliceblue; font-weight: 300;">
             <th>စဥ္</th>
             <th>ေခ်းငွါးသူအမည္</th>
             <th>မွတ္ပံုတင္နံပါတ္</th>
@@ -47,7 +47,7 @@
             <td>{{ $borrower->state}}</td>
             <td>{{ $borrower->rname }}</td>
 
-            <td>
+            <td style="font-size: 12px;">
                 <form action="{{ route('borrowers.destroy',$borrower->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('borrowers.show',$borrower->id) }}">Show</a>

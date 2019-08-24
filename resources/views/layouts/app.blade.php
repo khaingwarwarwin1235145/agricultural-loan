@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>{{config('app.name','Agricultural Loan')}}</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=mymyanmar' />
+    {{-- <link href='http://mywebfont.appspot.com/css?font=zawgyi' rel='stylesheet' type='text/css'> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

@@ -27,10 +27,8 @@ Route::get('/',function(){
 Auth::routes();
 Route::get('/logout','Auth\LoginController@logout');
 Route::resource('/info','InfoController');
-Route::get('/datafilling','Controller@check');
 Route::resource('/borrowers','BorrowersController');
-// Route::get('/sendemail','Controller@mail');
+Route::resource('/returnmoney','ReturnmoneyController');
 Route::resource('/recommenders','RecommenderController');
-Route::get('/mail','MailController@basic_email');
 Route::get('/result','Controller@check');
 

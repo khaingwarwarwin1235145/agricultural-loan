@@ -27,19 +27,21 @@
             <th>ဆက္သြယ္ရန္ဖုန္းနံပတ္ </th>
             <th>ဘဏ္မွထုတ္ေပးမည့္ေခ်းေငြ</th>
             <th>တစ္လအတြက္ေပးရမည့္အတိုး</th>
-            <th>၈လအတြက္စုစုေပါင္း</th>
-            <th> ျခ်းေငြထုတ္ယူသည့္ရက္စြဲ </th>
-            <th>ေထာက္ခံေပးသူအမည္</th>
+            <th>ဆပ္၇မည့္စုစုေပါင္းေခ်းေငြ</th>
+            <th>ေခ်းေငြဆပ္သည့္ေန႔
+            </th>
+            <th>ဆက္သြယ္ရန္ဖုန္းနံပတ္ </th>
         </tr>
         @foreach ($borrower as $borrowers)
         <tr>
             <td>{{$borrowers->name}}</a></td>
-            <td>{{ $borrowers->ph_no}}</td>
+            
             <td>{{ $borrowers->creditamount}}</td>
             <td>{{ $borrowers->toeamount}}</td>
             <td>{{ $borrowers->totalamount}}</td>
-            <td>{{ $borrowers->date}}</td>
-            <td>{{ $borrowers->rname }}</td>
+            <td>{{ $borrowers->returnmoney}}</td>
+            <td>{{ $borrowers->returndate}}</td>
+            <td>{{ $borrowers->ph_no}}</td>
         </tr>
         @endforeach
     </table>

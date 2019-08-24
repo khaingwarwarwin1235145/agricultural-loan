@@ -5,7 +5,7 @@
     <br><br><br>
     @foreach ($borrower as $item)
     <div class="row" style="color: forestgreen; weight: 400; padding-left: 30px;">  
-            <div class="col-lg-3">ေခ်းငွါးသူအမည္ ဘဏ္မွထုတ္ေပးမည့္ေခ်းေငြ
+            <div class="col-lg-3">ေခ်းငွါးသူအမည္ 
              </div>
             <div class="col-lg-1">=</div>
             <div class="col-lg-2">{{$item->name}}</div>

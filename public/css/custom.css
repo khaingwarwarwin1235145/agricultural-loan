@@ -1,4 +1,15 @@
-@import url('https://mmwebfonts.comquas.com/fonts/?font=notosan');
+/* @import url('https://mmwebfonts.comquas.com/fonts/?font=notosan'); */
+/* @import url('https://mmwebfonts.comquas.com/fonts/?font=mymyanmar'); */
+
+@import url('https://mmwebfonts.comquas.com/fonts/?font=zawgyi');
+
+html,body,p,div,*,table
+{
+	font-family: 'Zawgyi-One';
+}
+.zawgyi {
+    font-family:'Zawgyi-One';
+}
 
 .navbar-default{
     transition:500ms ease;
@@ -19,16 +30,14 @@
     background: inherit;
   }
 .demoimg{
-   height: 400px; 
-   clip-path: ellipse(100% 55% at 48% 44%);
-   filter: blur(3px);
+    height: 400px; 
+    clip-path: ellipse(100% 55% at 48% 44%);
+    filter: blur(3px);
 }
 #main-box {
     border-radius: 30px;
     height: 850px;
-    margin-top: 120px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin: 120px;
     
   }
 #main-box .col-lg-10 h3{
@@ -40,6 +49,7 @@
     padding-top: 25px;
     font-size: 18px;
     color: #215483;
+    font-family:'Zawgyi-One';
 }
 #main-box:hover #Oval-3-Copy-15{
     fill: goldenrod;
@@ -47,12 +57,22 @@
 #main-box:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#info{
+    border-radius: 30px;
+    height: 850px;
+    margin: 120px;
+}
+#info:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: goldenrod;
+}
+
 .tab{
     text-align: justify;
     text-justify: inter-word;
     text-indent: 70px;
-    font-family:'Notosan Myanmar';
     font-size: 16px;
+    font-family:'Zawgyi-One';
 
 }
 .float_1{
@@ -94,3 +114,5 @@ span {
 input {
     width: 100%
 }
+.ui-group-buttons .or.or-lg{height:1.3em;font-size:16px}
+.ui-group-buttons .or.or-lg:after{height:2.85em}

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div id="main-box" style="height: 1000px;">
     @include('inc.tab')
     <form action="{{ route('info.store') }}" method="POST" style="padding-left: 50px;">
@@ -8,23 +9,23 @@
             <div class="col-lg-6 main-box">
                 <h5 style="text-align: center; color:forestgreen; font-weight: 700;">ေခ်းငွါးသူ</h5><br>
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="form-group">
-                                        <strong>ေခ်းငွါးသူအမည္</strong>
-                                        <input type="text" name="name" class="form-control">
-                                    </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="form-group">
-                                        <strong>အဖအမည္</strong>
-                                        <input type="text" name="fathername" class="form-control">
-                                    </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="form-group">
-                                        <strong>မွတ္ပံုတင္နံပါတ္ </strong>
-                                        <input type="text" name="nrc_no" class="form-control">
-                                    </div>
-                            </div>
+                    <div class="form-group">
+                        <strong>ေခ်းငွါးသူအမည္</strong>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>အဖအမည္</strong>
+                        <input type="text" name="fathername" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>မွတ္ပံုတင္နံပါတ္ </strong>
+                        <input type="text" name="nrc_no" class="form-control">
+                    </div>
+                </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <strong>အလုပ္အကိုင္ </strong>
@@ -51,7 +52,7 @@
                             </div>   
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
-                                        <strong> ၿမိဳ႕နယ္အမည္ ျ</strong>
+                                        <strong> ၿမိဳ႕နယ္အမည္ </strong>
                                         <input type="text" name="township" class="form-control">
                                     </div>
                             </div>   
@@ -61,7 +62,7 @@
                                         <input type="text" name="state" class="form-control">
                                     </div>
                             </div>   
-            </div>
+                </div>
             <div class="col-lg-6 main-box">
                     <h5 style="text-align: center; color: forestgreen; font-weight: 700;">ေထာက္ခံေပးသူ</h5><br>
                             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -102,7 +103,7 @@
                             </div>   
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
-                                        <strong> ၿမိဳ႕နယ္အမည္ ျ</strong>
+                                        <strong> ၿမိဳ႕နယ္အမည္ </strong>
                                         <input type="text" name="rtownship" class="form-control">
                                     </div>
                             </div>   

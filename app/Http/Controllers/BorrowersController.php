@@ -7,6 +7,7 @@ use App\Borrower;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
 
+
 class BorrowersController extends Controller
 {
     /**
@@ -81,8 +82,14 @@ class BorrowersController extends Controller
             'rstate'=> $request->get('rstate')
           ]);
           $borrower->save();
-          return redirect('/borrowers')->with('success', 'Borrower has been added');
-    }
+          if( Input::get('acre_no') > 10 ){
+            return redirect()->route('borrowers.create')
+            ->with('success','လူႀကီးမင္းပိုင္ဆိူင္သည့္လယ္ဧကသည္ ၉ဧကထက္ေက်ာ္လြန္ေနေသာေၾကာင့္ လူႀကီးမင္းကို ေတာင္သူႀကီးဟုသတ္မွတ္ေသာေၾကာင့္ ေခ်းေငြထုတ္ေပးမည္မဟုတ္ပါ');
+
+          }
+          return redirect()->route('/borrowers')
+          ->with('success', 'Borrower has been added');
+        }
 
     /**
      * Display the specified resource.

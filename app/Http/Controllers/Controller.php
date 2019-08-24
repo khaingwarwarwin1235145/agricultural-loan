@@ -21,7 +21,7 @@ class Controller extends BaseController
                 ->select(['borrowers.name','borrowers.creditamount',
                 'borrowers.toeamount','borrowers.totalamount',
                 'borrowers.date','borrowers.ph_no','borrowers.rname'])
-                ->where('borrowers.varified', '=', 1)->get();
+                ->where('borrowers.varified', '=', 1 )->get();
                 return view('result', array('borrower'=>$borrower));
                 
          

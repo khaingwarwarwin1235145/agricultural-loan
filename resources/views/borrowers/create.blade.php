@@ -3,15 +3,19 @@
 <div class="row" style="padding-top: 50px; padding-left: 30px;">
 
             <div class="col-lg-11" style="text-align: center;">
-                <h2 style="color: forestgreen;">စာရင္းတင္သူအသစ္ဖန္တီးရန္
+                <h2 style="color: forestgreen; font-weight: 700;">စာရင္းတင္သူအသစ္ဖန္တီးရန္
                     </h2>
             </div>
             <div class="col-lg-1" style="padding-top: 20px;">
                 <a class="btn btn-primary" href="{{ route('borrowers.index') }}">ေနာက္သို႔</a>
             </div>
 
-</div>
-       
+</div><br>
+    @if ($message = Session::get('success'))
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
+    @endif
     @if ($errors->any())
         <div class="alert alert-danger">
             <strong>ျဖည္​့စြက္​ခ်က္​မ်ား လြဲမွား​ေနပါသည္​။</strong>
@@ -24,6 +28,11 @@
         </div>
     @endif
     <div id="main-box" style="height: 1000px;">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      
+                    </li>
+                </ul>
         <form action="{{ route('borrowers.store') }}" method="POST" style="padding-left: 50px;">
                         @csrf
                 <div class="row" style="padding-top: 60px;">
@@ -79,7 +88,7 @@
                                         </div>   
                                         <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
-                                                    <strong> ၿမိဳ႕နယ္အမည္ ျ</strong>
+                                                    <strong> ၿမိဳ႕နယ္အမည္ </strong>
                                                     <input type="text" name="township" class="form-control">
                                                 </div>
                                         </div>   
@@ -130,7 +139,7 @@
                                         </div>   
                                         <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
-                                                    <strong> ၿမိဳ႕နယ္အမည္ ျ</strong>
+                                                    <strong> ၿမိဳ႕နယ္အမည္ </strong>
                                                     <input type="text" name="rtownship" class="form-control">
                                                 </div>
                                         </div>   

@@ -26,6 +26,7 @@ class CreateBorrowersTable extends Migration
             $table->integer('totalamount');
             $table->integer('code');
             $table->string('date');
+            $table->strubg('returndate');
             $table->integer('acre_no');
             $table->string('village
             ');

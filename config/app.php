@@ -12,7 +12,11 @@ return [
     | any other location as required by the application or its packages.
     |
     */
+        // default : zawgyi
+        'font' => 'ourunicode',
 
+        // define class name in input , textarea
+        'define_class' => false,
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
@@ -174,6 +178,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        PhpJunior\Zawuni\ZawuniServiceProvider::class,
+
 
     ],
 
